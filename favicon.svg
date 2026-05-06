@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Butler Homes">
+  <rect width="64" height="64" rx="14" fill="#22312f"/>
+  <path d="M13 50V24L32 11l19 13v26H40V35H24v15H13Z" fill="#f4efe7"/>
+  <path d="M23 27h18M24 35h16" stroke="#c7a766" stroke-width="4" stroke-linecap="round"/>
+</svg>
