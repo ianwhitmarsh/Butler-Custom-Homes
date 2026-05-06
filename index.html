@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butler Homes | Award-Winning Tulsa Custom Home Builder</title>
+    <meta
+      name="description"
+      content="A premium custom home builder website concept for Butler Homes in the Tulsa area."
+    />
+    <link rel="preconnect" href="https://dlqxt4mfnxo6k.cloudfront.net" />
+    <link rel="preconnect" href="https://s3.amazonaws.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;850&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Butler Homes home">
+        <img
+          src="https://s3.amazonaws.com/buildercloud/8bc624fb95d9229abf196d3eccda5e90.png"
+          alt="Butler Homes"
+        />
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#collections">Collections</a>
+        <a href="#concierge">Home Path</a>
+        <a href="#craft">Craft</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Visit</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="promo-pill" href="#incentive">4.99% select homes</a>
+        <a class="button button-dark" href="tel:+19183446808">
+          <i data-lucide="phone"></i>
+          (918) 344-6808
+        </a>
+      </div>
+
+      <button
+        class="icon-button menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+      <a href="#collections">Collections</a>
+      <a href="#concierge">Home Path</a>
+      <a href="#craft">Craft</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Visit</a>
+      <a href="tel:+19183446808">(918) 344-6808</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-label="Butler Homes introduction">
+        <img
+          class="hero-image"
+          src="https://dlqxt4mfnxo6k.cloudfront.net/butlerhomesllc.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hMGEzZDQ0NWRlZjgxZWViODFiNmI0MGU2NTNjY2Y1Zi5qcGVn/1200/1200"
+          alt="Butler Homes custom home exterior"
+        />
+        <div class="hero-shade"></div>
+
+        <div class="hero-inner">
+          <p class="eyebrow">Tulsa area custom and semi-custom homes</p>
+          <h1>Homes with a point of view.</h1>
+          <p class="hero-copy">
+            Butler Homes pairs award-winning plans, disciplined construction, and a true design
+            studio experience for families building in Broken Arrow, Bixby, Jenks, Owasso, Pryor,
+            and beyond.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#concierge">Find Your Path</a>
+            <a class="button button-glass" href="#gallery">See the Work</a>
+          </div>
+        </div>
+
+        <div class="hero-proof" aria-label="Butler Homes proof points">
+          <div>
+            <strong>25+</strong>
+            <span>years in residential construction and land development</span>
+          </div>
+          <div>
+            <strong>CPB</strong>
+            <span>Certified Professional Builder through OKHBA</span>
+          </div>
+          <div>
+            <strong>Parade</strong>
+            <span>award-winning plans, kitchens, interiors, and curb appeal</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Builder standards">
+        <span>Spray foam insulation</span>
+        <span>Low E windows</span>
+        <span>R-38 attic insulation</span>
+        <span>Design studio selections</span>
+        <span>Post-tension slab engineering</span>
+      </section>
+
+      <section class="section split-section reveal" id="concierge">
+        <div class="section-copy">
+          <p class="eyebrow">Butler Home Path</p>
+          <h2>Start with the kind of move you want to make.</h2>
+          <p>
+            Whether you need a beautiful home soon, want deeper finish flexibility, or plan to
+            build on your land, the experience should feel clear from the first conversation.
+          </p>
+        </div>
+
+        <div class="path-studio" aria-label="Interactive home path concierge">
+          <div class="path-controls">
+            <button class="path-option is-active" type="button" data-path="ready">
+              <i data-lucide="key-round"></i>
+              Move-in ready
+            </button>
+            <button class="path-option" type="button" data-path="custom">
+              <i data-lucide="drafting-compass"></i>
+              Semi-custom
+            </button>
+            <button class="path-option" type="button" data-path="land">
+              <i data-lucide="map"></i>
+              Build on land
+            </button>
+          </div>
+
+          <label class="budget-control" for="budgetRange">
+            <span>Comfortable investment</span>
+            <strong data-budget-label>$550k</strong>
+          </label>
+          <input
+            id="budgetRange"
+            type="range"
+            min="300000"
+            max="1000000"
+            step="25000"
+            value="550000"
+            data-budget-range
+          />
+
+          <div class="path-result">
+            <span data-path-kicker>Best starting point</span>
+            <h3 data-path-title>Tour available homes in Harvard Oaks and Rowan Grove.</h3>
+            <p data-path-copy>
+              Focus on quick confidence: compare finishes, walk the spaces, then review current
+              incentives with the sales team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section collections-section reveal" id="collections">
+        <div class="section-heading">
+          <p class="eyebrow">Plan Collections</p>
+          <h2>Three ways into a Butler home.</h2>
+          <p>
+            Each path keeps the standards high. The difference is how much time, design latitude,
+            and land flexibility you want.
+          </p>
+        </div>
+
+        <div class="collection-tabs" role="group" aria-label="Filter collections">
+          <button class="tab is-active" type="button" data-filter="all">All</button>
+          <button class="tab" type="button" data-filter="premier">Premier</button>
+          <button class="tab" type="button" data-filter="classic">Classic</button>
+          <button class="tab" type="button" data-filter="cottage">Cottage</button>
+        </div>
+
+        <div class="collection-grid">
+          <article class="collection-card" data-category="premier">
+            <img
+              src="https://dlqxt4mfnxo6k.cloudfront.net/butlerhomesllc.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80YTc5OWRjMjZlMzU0ZGUxZmQxM2VhNjEzMjE3NWU0OC5qcGVn/webp/800/800"
+              alt="Premier Series Butler home exterior"
+            />
+            <div class="collection-content">
+              <span>Premier Series</span>
+              <h3>Elevated plans with the broadest finish range.</h3>
+              <p>
+                A showcase path for buyers who care about high-end details, layered interiors, and
+                award-recognized floorplans.
+              </p>
+              <ul>
+                <li>Design studio personalization</li>
+                <li>Parade-winning plan families</li>
+                <li>Statement kitchens and suites</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="classic">
+            <img
+              src="https://dlqxt4mfnxo6k.cloudfront.net/butlerhomesllc.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC81NTJkYmJkOTVjMjk3MzgwNzVjNTNmYzBhMzMzZDJjZS5qcGVn/webp/800/800"
+              alt="Butler Homes kitchen with wood island"
+            />
+            <div class="collection-content">
+              <span>Classic Series</span>
+              <h3>Balanced style, budget, and durable standards.</h3>
+              <p>
+                The polished, practical path for buyers who want designer influence without losing
+                sight of investment.
+              </p>
+              <ul>
+                <li>Strong included amenities</li>
+                <li>Approachable customization</li>
+                <li>Smart everyday layouts</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="cottage">
+            <img
+              src="https://dlqxt4mfnxo6k.cloudfront.net/butlerhomesllc.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9kODNmNzc5MDRkNzFjNWQzMDg4MjE2MjgyOWNjMjJmMC5qcGVn/webp/800/800"
+              alt="Butler Homes living room with fireplace"
+            />
+            <div class="collection-content">
+              <span>Cottage Series</span>
+              <h3>Build-on-your-land clarity with Butler quality.</h3>
+              <p>
+                A more attainable way to get the land, layout, and finish direction working
+                together from day one.
+              </p>
+              <ul>
+                <li>BOYL-friendly plans</li>
+                <li>Clear square-foot strategy</li>
+                <li>Room to tailor the essentials</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section craft-section reveal" id="craft">
+        <div class="craft-image">
+          <img
+            src="https://s3.amazonaws.com/buildercloud/26769ffcf53a8375c530f896864f540c.jpeg"
+            alt="Butler Homes living room with vaulted ceiling and fireplace"
+            data-craft-image
+          />
+        </div>
+
+        <div class="craft-copy">
+          <p class="eyebrow">Beyond the Standard</p>
+          <h2>Details that look good because the build underneath is serious.</h2>
+          <p>
+            Butler's strongest pages should make the buyer feel both inspired and protected: beauty
+            up front, construction discipline underneath, and a process they can understand.
+          </p>
+
+          <div class="craft-switcher" role="group" aria-label="Craft detail selector">
+            <button class="craft-button is-active" type="button" data-craft="structure">
+              Structure
+            </button>
+            <button class="craft-button" type="button" data-craft="comfort">Comfort</button>
+            <button class="craft-button" type="button" data-craft="finish">Finish</button>
+          </div>
+
+          <div class="craft-detail">
+            <h3 data-craft-title>Engineered for the way Oklahoma homes live.</h3>
+            <p data-craft-copy>
+              Post-tension slab engineering, reliable framing practices, and durable exterior
+              materials create the quiet confidence buyers rarely see in a brochure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="studio-section reveal" id="studio">
+        <div class="studio-copy">
+          <p class="eyebrow">Design Studio</p>
+          <h2>A custom feel without the decision fatigue.</h2>
+          <p>
+            The design experience should feel edited, tactile, and calm. Pick a direction and the
+            studio board shifts around it.
+          </p>
+        </div>
+
+        <div class="palette-board" data-palette-board>
+          <div class="palette-visual">
+            <span class="slab slab-large"></span>
+            <span class="slab slab-stone"></span>
+            <span class="slab slab-metal"></span>
+          </div>
+          <div class="palette-panel">
+            <div class="swatches" role="group" aria-label="Finish palettes">
+              <button
+                class="swatch is-active"
+                type="button"
+                data-palette="heirloom"
+                aria-label="Heirloom contrast palette"
+              ></button>
+              <button
+                class="swatch"
+                type="button"
+                data-palette="light"
+                aria-label="Light oak palette"
+              ></button>
+              <button
+                class="swatch"
+                type="button"
+                data-palette="moody"
+                aria-label="Moody mineral palette"
+              ></button>
+            </div>
+            <h3 data-palette-title>Heirloom Contrast</h3>
+            <p data-palette-copy>
+              Deep green, creamy stone, warm oak, and aged brass for rooms that feel collected.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section reveal" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Finished Work</p>
+          <h2>Rooms with restraint, texture, and daylight.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-large" type="button" data-gallery="Signature living">
+            <img
+              src="https://s3.amazonaws.com/buildercloud/26769ffcf53a8375c530f896864f540c.jpeg"
+              alt="Butler Homes living room with beams and fireplace"
+            />
+            <span>Signature living</span>
+          </button>
+          <button class="gallery-item" type="button" data-gallery="Morning room">
+            <img
+              src="https://s3.amazonaws.com/buildercloud/731fc7ffe818a7fcd849b38fb22b28b2.jpeg"
+              alt="Butler Homes sitting room with large windows"
+            />
+            <span>Morning room</span>
+          </button>
+          <button class="gallery-item" type="button" data-gallery="Primary suite">
+            <img
+              src="https://s3.amazonaws.com/buildercloud/0b8a26218d48c4b6fedffe5a457ddfe5.jpeg"
+              alt="Butler Homes primary bedroom with blue accent wall"
+            />
+            <span>Primary suite</span>
+          </button>
+          <button class="gallery-item gallery-wide" type="button" data-gallery="Dining detail">
+            <img
+              src="https://s3.amazonaws.com/buildercloud/70f2fed5850ce20fdfa60e236bdf74f9.jpeg"
+              alt="Butler Homes dining room with large art and round table"
+            />
+            <span>Dining detail</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section incentive-section reveal" id="incentive">
+        <div>
+          <p class="eyebrow">Spring Incentive</p>
+          <h2>See how the 4.99% promotion could change the conversation.</h2>
+          <p>
+            A refined site should make the strongest offer clear without letting it cheapen the
+            brand. This estimator keeps it helpful and contained.
+          </p>
+        </div>
+
+        <div class="calculator">
+          <label for="priceRange">
+            <span>Home price</span>
+            <strong data-price-label>$525,000</strong>
+          </label>
+          <input
+            id="priceRange"
+            type="range"
+            min="300000"
+            max="850000"
+            step="25000"
+            value="525000"
+            data-price-range
+          />
+          <div class="savings-line">
+            <span>Estimated monthly difference</span>
+            <strong data-savings-label>$580/mo</strong>
+          </div>
+          <p class="fine-print">
+            Illustrative principal-and-interest estimate only. Actual terms depend on lender, loan
+            program, credit approval, taxes, insurance, and qualifying homes.
+          </p>
+        </div>
+      </section>
+
+      <section class="section quote-section reveal">
+        <p class="eyebrow">Client Proof</p>
+        <blockquote>
+          Butler homes are beautifully designed and well built with high quality craftsmanship.
+        </blockquote>
+        <cite>Amity Edwards</cite>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <div class="visit-panel">
+          <div>
+            <p class="eyebrow">Visit the Design Center</p>
+            <h2>Walk the finishes. Ask better questions. Leave with a clearer plan.</h2>
+            <p>
+              Sales Office and Design Center: 1400 N. 71st Street, Broken Arrow, OK 74014.
+            </p>
+          </div>
+
+          <div class="tour-picker">
+            <p>Preferred visit</p>
+            <div class="tour-days" role="group" aria-label="Preferred visit day">
+              <button class="tour-day is-active" type="button" data-tour-day="Wednesday">
+                Wed
+              </button>
+              <button class="tour-day" type="button" data-tour-day="Thursday">Thu</button>
+              <button class="tour-day" type="button" data-tour-day="Friday">Fri</button>
+            </div>
+            <strong data-tour-label>Wednesday design preview</strong>
+            <div class="contact-actions">
+              <a class="button" href="tel:+19183446808">Call Sales</a>
+              <a class="button button-outline" href="mailto:sales@butlerhomesllc.com">
+                Email Butler
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        src="https://s3.amazonaws.com/buildercloud/8bc624fb95d9229abf196d3eccda5e90.png"
+        alt="Butler Homes"
+      />
+      <p>Premium website concept for Butler Homes, focused on trust, taste, and easier buyer paths.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox>
+      <button class="icon-button" type="button" aria-label="Close preview" data-close-lightbox>
+        <i data-lucide="x"></i>
+      </button>
+      <img src="" alt="" data-lightbox-image />
+      <p data-lightbox-title></p>
+    </dialog>
+  </body>
+</html>
